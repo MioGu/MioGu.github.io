@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-CN">
+<!--
+//                            _ooOoo_
+//                           o8888888o
+//                           88" . "88
+//                           (| -_- |)
+//                            O\ = /O
+//                        ____/`---'\____
+//                      .   ' \\| |// `.
+//                       / \\||| : |||// \
+//                     / _||||| -:- |||||- \
+//                       | | \\\ - /// | |
+//                     | \_| ''\---/'' | |
+//                      \ .-\__ `-` ___/-. /
+//                   ___`. .' /--.--\ `. . __
+//                ."" '< `.___\_<|>_/___.' >'"".
+//               | | : `- \`.;`\ _ /`;.`/ - ` : | |
+//                 \ \ `-. \_ __\ /__ _/ .-` / /
+//         ======`-.____`-.___\_____/___.-`____.-'======
+//                            `=---='
+//                 拦截插件累计拦截逗比攻击"1381438"次！
+//         .............................................
+//                  佛祖保佑             永无BUG
+//          佛曰:
+//                  写字楼里写字间，写字间里程序员；
+//                  程序人员写程序，又拿程序换酒钱。
+//                  酒醒只在网上坐，酒醉还来网下眠；
+//                  酒醉酒醒日复日，网上网下年复年。
+//                  但愿老死电脑间，不愿鞠躬老板前；
+//                  奔驰宝马贵者趣，公交自行程序员。
+//                  别人笑我忒疯癫，我笑自己命太贱；
+//                  不见满街漂亮妹，哪个归得程序员？
+-->
+<head>
+    <!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=https://miogu.github.io/warn.html">
+<![endif]-->
+<meta charset="utf-8">
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="mobile-agent" content="format=html5; url=https://miogu.github.io">
+<meta name="author" content="Mio Gu">
+<link rel="stylesheet" href="/css/SimpleStyle.css">
+
+<link rel="shortcut icon" href="/images/favicon.png">
+
+
+<title>js高级(1) - Mio GO GO GO</title>
+
+<meta name="keywords" content="undefined">
+
+<meta name="description " content="null">
+</head>
+<body>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="说">说</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
+        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
+        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
+        <a href="/video" title="视频资源"><i class="fa fa-video-camera"></i><span>视频资源</span></a>
+        <a href="/cross_fire" title="穿越火线"><i class="fa fa-wifi"></i><span>穿越火线</span></a>
+        <a href="/help" title="帮助中心"><i class="fa fa-question-circle"></i><span>帮助中心</span></a>
+    </nav>
+</div>
+<div class="nav-user">
+    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
+    <a class="btn-weixin-mp" href="javascript:"><i class="fa fa-weixin"></i></a>
+</div>
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <div class="cover-img"></div>
+    <div class="cover-info">
+        <img class="avatar" width="72" src="/images/favicon.png" alt="avatar" />
+        <h1>说IT</h1>
+        <h3>交流技术，畅谈人文</h3>
+        <p>一个关注技术与人文的IT博客</p>
+        <div class="cover-sns">
+            <div class="btn btn-slack">
+                <a href="https://join.slack.com/readseek/signup" target="_blank" rel="nofollow"><i class="fa fa-slack"></i></a>
+            </div>
+            <div class="btn btn-weibo">
+                <a href="https://weibo.com/tangkunyin" target="_blank" rel="nofollow"><i class="fa fa-weibo"></i></a>
+            </div>
+            <div class="btn btn-facebook">
+                <a href="https://facebook.com/tangkunyin"  target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="btn btn-github">
+                <a href="https://github.com/tangkunyin"  target="_blank" rel="nofollow"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="page-title">
+    <ul>
+        <li><a href="/">最新</a></li>
+        
+            
+                <li class="">
+                    <a href="/categories/big-front-end" data-name="前端">前端</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/server-side" data-name="后台">后台</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/design" data-name="设计">设计</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/resource" data-name="资源">资源</a>
+                </li>
+            
+        
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <label for="s" class="sr-only">请输入关键字</label>
+        <input class="search-field" type="text" name="s" class="text" placeholder="请输入关键字" />
+        <button type="submit" class="search-form-submit" title="搜索"><i class="fa fa-search"></i></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="undefined" target="_blank">
+                    <img width="48" src="undefined" alt="avatar"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="undefined" target="_blank">undefined</a>
+                    <span title="最后编辑于2017-06-24">2017-06-24</span>
+                </p>
+                <p>undefined</p>
+            </div>
+            <h2 class="post-title">JS高级(1)</h2>
+            <div class="post-meta">
+                本文总共2060个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <h2 id="JavaScript的组成"><a href="#JavaScript的组成" class="headerlink" title="JavaScript的组成"></a>JavaScript的组成</h2><ul>
+<li>DOM: Document Object Model 提供了一整套操作页面元素的API</li>
+<li>BOM: Browser Object Model 提供了一整套操作浏览器相关内容的API</li>
+<li>ECMAScript: js的语法规范以及标准！<a id="more"></a>
+<h2 id="JavaScript中的数据类型"><a href="#JavaScript中的数据类型" class="headerlink" title="JavaScript中的数据类型"></a>JavaScript中的数据类型</h2><h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3></li>
+</ul>
+<ol>
+<li><code>string</code></li>
+<li><code>number</code></li>
+<li><code>boolean</code></li>
+</ol>
+<h3 id="复合数据类型"><a href="#复合数据类型" class="headerlink" title="复合数据类型"></a>复合数据类型</h3><ol>
+<li>Object</li>
+<li>function</li>
+<li>Array</li>
+<li>Date</li>
+<li>RegExp</li>
+<li>String</li>
+<li>Number</li>
+<li>Boolean</li>
+<li>Math</li>
+</ol>
+<h3 id="空类型"><a href="#空类型" class="headerlink" title="空类型"></a>空类型</h3><ol>
+<li><code>null</code></li>
+<li><code>undefined</code></li>
+</ol>
+<h3 id="获取数据类型的方式"><a href="#获取数据类型的方式" class="headerlink" title="获取数据类型的方式"></a>获取数据类型的方式</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> res = <span class="keyword">typeof</span> 数据;</div><div class="line"><span class="comment">//typeof关键字可以用来获取数据的数据类型，他的返回值表示数据的数据类型，返回值是一个字符串类型的值</span></div><div class="line"></div><div class="line"><span class="comment">//typeof关键字获取除了function以外所有的引用类型的数据的类型的时候，获取到的都是 object</span></div><div class="line"></div><div class="line"><span class="comment">//typeof null 获取到的是 object</span></div><div class="line"><span class="comment">//typeof undefined 获取到的是 undefined</span></div></pre></td></tr></table></figure>
+<h2 id="全等和等于的区别"><a href="#全等和等于的区别" class="headerlink" title="全等和等于的区别"></a>全等和等于的区别</h2><h3 id="全等"><a href="#全等" class="headerlink" title="全等"></a>全等</h3><p>即判断数据的数据类型是否一致，也判断值是否一致</p>
+<h3 id="等于"><a href="#等于" class="headerlink" title="等于"></a>等于</h3><p>只判断值是否一样</p>
+<h3 id="引用类型和值类型参与运算的时候的规则"><a href="#引用类型和值类型参与运算的时候的规则" class="headerlink" title="引用类型和值类型参与运算的时候的规则"></a>引用类型和值类型参与运算的时候的规则</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log([] == ![]);</div><div class="line"><span class="comment">//1. console.log([] == false);</span></div><div class="line"><span class="comment">//2. console.log([].valueOf() == false);</span></div><div class="line"><span class="comment">//3. console.log([].toString() == false);</span></div><div class="line"><span class="comment">//4. console.log("" == false);</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(&#123;&#125; + <span class="number">1</span>);</div><div class="line"><span class="built_in">console</span>.log(&#123;&#125; == !&#123;&#125;);</div></pre></td></tr></table></figure>
+<p>当值类型和数据和引用类型的数据发生运算的时候，首先需要调用该引用类型数据的valueOf方法，获取返回之后，尝试进行运算，如果可以运算，则得出结果，如果不能运算，继续调用该引用类型数据的toString方法，获取返回值，参与运算！</p>
+<h2 id="in关键字的使用"><a href="#in关键字的使用" class="headerlink" title="in关键字的使用"></a>in关键字的使用</h2><h3 id="for-in-用来遍历对象的属性"><a href="#for-in-用来遍历对象的属性" class="headerlink" title="for-in 用来遍历对象的属性"></a>for-in 用来遍历对象的属性</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> k <span class="keyword">in</span> obj)&#123;</div><div class="line">	<span class="built_in">console</span>.log(k); <span class="comment">//k 代表的就是对象的属性，这个k是字符串类型</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="属性名-in-对象-判断对象能否访问指定的属性"><a href="#属性名-in-对象-判断对象能否访问指定的属性" class="headerlink" title="属性名 in 对象  判断对象能否访问指定的属性"></a>属性名 in 对象  判断对象能否访问指定的属性</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">name</span>: <span class="string">"xyz"</span>&#125;;</div><div class="line"><span class="built_in">console</span>.log(<span class="string">"name"</span> <span class="keyword">in</span> obj);</div></pre></td></tr></table></figure>
+<h2 id="delete关键字的使用"><a href="#delete关键字的使用" class="headerlink" title="delete关键字的使用"></a>delete关键字的使用</h2><h3 id="删除没有使用var声明的变量"><a href="#删除没有使用var声明的变量" class="headerlink" title="删除没有使用var声明的变量"></a>删除没有使用var声明的变量</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">delete</span> 变量名;</div></pre></td></tr></table></figure>
+<h3 id="删除对象的属性"><a href="#删除对象的属性" class="headerlink" title="删除对象的属性"></a>删除对象的属性</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">delete</span> 对象名.属性</div><div class="line"><span class="keyword">delete</span> 对象名[属性]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>tip: 访问一个不存在的变量，会报错，xx is not defined<br>访问一个对象不存在的属性，不会报错，会返回undefined</p>
+</blockquote>
+<h2 id="逻辑中断"><a href="#逻辑中断" class="headerlink" title="逻辑中断"></a>逻辑中断</h2><h3 id="中断"><a href="#中断" class="headerlink" title="||中断"></a>||中断</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">表达式<span class="number">1</span>||表达式<span class="number">2</span></div><div class="line"><span class="comment">//如果表达式1为真，则返回表达式1，否则返回表达式2</span></div></pre></td></tr></table></figure>
+<h3 id="amp-amp-中断"><a href="#amp-amp-中断" class="headerlink" title="&amp;&amp; 中断"></a>&amp;&amp; 中断</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">表达式<span class="number">1</span>&amp;&amp;表达式<span class="number">2</span></div><div class="line"><span class="comment">//如果表达式1为假，则返回表达式1，否则返回表达式2</span></div></pre></td></tr></table></figure>
+<h2 id="break和continue"><a href="#break和continue" class="headerlink" title="break和continue"></a>break和continue</h2><h3 id="break-跳出整个循环，继续执行循环之后的代码"><a href="#break-跳出整个循环，继续执行循环之后的代码" class="headerlink" title="break 跳出整个循环，继续执行循环之后的代码"></a>break 跳出整个循环，继续执行循环之后的代码</h3><h3 id="continue-跳出本次循环，-执行下次循环"><a href="#continue-跳出本次循环，-执行下次循环" class="headerlink" title="continue 跳出本次循环， 执行下次循环"></a>continue 跳出本次循环， 执行下次循环</h3><h2 id="异常处理语句"><a href="#异常处理语句" class="headerlink" title="异常处理语句"></a>异常处理语句</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>&#123;</div><div class="line">	<span class="comment">//可能出现错误的代码</span></div><div class="line">&#125;<span class="keyword">catch</span>(e)&#123;</div><div class="line">	<span class="comment">//出错后的处理代码</span></div><div class="line">	<span class="comment">//e 就出错的错误信息</span></div><div class="line">&#125;<span class="keyword">finally</span>&#123;</div><div class="line">	<span class="comment">//无论是否出错都会执行的代码</span></div><div class="line">	<span class="comment">//一般情况下放释放资源的代码</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="手动抛出异常"><a href="#手动抛出异常" class="headerlink" title="手动抛出异常"></a>手动抛出异常</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">throw</span> anything;</div><div class="line"><span class="comment">//throw可以手动抛出异常，可以抛出任何东西，throw出去的内容如果有trycatch语句，就会被catch捕获，catch中的e就是我们跑出去的异常信息</span></div></pre></td></tr></table></figure>
+<h2 id="引用类型和值类型"><a href="#引用类型和值类型" class="headerlink" title="引用类型和值类型"></a>引用类型和值类型</h2><h3 id="值类型"><a href="#值类型" class="headerlink" title="值类型"></a>值类型</h3><p>存储的是数据本身的这种数据，就是值类型的数据</p>
+<h3 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h3><p>存储的是数据的地址，数据单独存储，这种数据，就是引用类型的数据</p>
+<h3 id="值类型和引用类型的赋值特征"><a href="#值类型和引用类型的赋值特征" class="headerlink" title="值类型和引用类型的赋值特征"></a>值类型和引用类型的赋值特征</h3><h4 id="值类型-1"><a href="#值类型-1" class="headerlink" title="值类型"></a>值类型</h4><p>值类型赋值，会将当前变量存储的数据直接复制一份交给新的变量，此时两个变量内容相同，但是存储空间完全独立，互不影响</p>
+<p>引用类型赋值， 会将当前变量存储的数据的地址复制一份，交给新的变量，两个变量指向同一个对象，修改其中一个，另外一个也受到影响</p>
+<h2 id="对象的动态特性"><a href="#对象的动态特性" class="headerlink" title="对象的动态特性"></a>对象的动态特性</h2><p>在对象创建完成之后，可以随时为对象新增成员（属性和方法）这种特性就是动态特性</p>
+<h2 id="调试工具的使用（练习）"><a href="#调试工具的使用（练习）" class="headerlink" title="调试工具的使用（练习）"></a>调试工具的使用（练习）</h2><h2 id="面向对象的基本概念"><a href="#面向对象的基本概念" class="headerlink" title="面向对象的基本概念"></a>面向对象的基本概念</h2><h3 id="面向过程"><a href="#面向过程" class="headerlink" title="面向过程"></a>面向过程</h3><p>解决问题的思维方式， 将解决问题的关注点方法在了解决问题的每一个详细的步骤上！</p>
+<h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><p>解决问题的思维方式， 将解决问题的关注点方法在了解决问题所需要的一系列的对象身上！</p>
+<h3 id="面向对象和面向过程的关系"><a href="#面向对象和面向过程的关系" class="headerlink" title="面向对象和面向过程的关系"></a>面向对象和面向过程的关系</h3><p>面向对象其实就是对面向过程的封装</p>
+<h3 id="什么是对象"><a href="#什么是对象" class="headerlink" title="什么是对象"></a>什么是对象</h3><p>万物皆对象<br>js中，无序的键值对集合，就是对象！</p>
+
+        </div>
+        <div class="post-tool">
+            <a class="btn-weixin-mp" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-mobile" aria-hidden="true"></i> 打包
+            </a>
+        </div>
+        
+        <div class="post-tags">标签：
+            
+        </div>
+        
+    </article>
+    
+</div>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner">
+        <p>
+            <a href="/about"  title="关于本站">关于本站</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/help" title="帮助中心" >帮助中心</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/video" title="视频资源">视频资源</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <!-- 自定义链接 -->
+            <a href="/links" title="友情链接">友情链接</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/app" title="App下载">App下载</a>
+        </p>
+        <p>
+            本站点采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>，已建立<a href="/timeline" id="siteBuildingTime"></a>天<br/>
+            ©2017 基于<a href="http://hexo.io" target="_blank">Hexo</a>搭建
+            ，主题&nbsp<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank">JSimple</a>
+            ，作者<a href="https://www.tangkunyin" target="_blank">唐先森</a>
+            ，Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+        </p>
+        
+    </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="/js/InsightSearch.js"></script>
+<script src="/js/SimpleCore.js"></script>
+
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
+</div>
+<script>
+    $(function () {
+        SimpleCore.init({
+            buildingTime: '08/20/2014',
+            current: $('.post-tags').length > 0 ? 'post' : 'archive',
+            customImg: '/images/weixin-mp.png'
+        });
+    });
+</script>
+</body>
+</html>
