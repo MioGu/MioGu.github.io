@@ -10,7 +10,21 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
 
 
 
@@ -97,7 +111,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS高级(3)">
 <meta property="og:url" content="https://miogu.github.io/2017/06/24/JS高级-3/index.html">
-<meta property="og:site_name" content="Mio GO GO GO">
+<meta property="og:site_name" content="忆往昔峥嵘岁月稠">
 <meta property="og:description" content="原型链对象都有原型，原型也是对象，原型也有原型，这样就形成了原型组成链条结构，称为原型链。 Object.prototypeObject.prototype是js中所有对象的原型链的最终一环，null标志着原型链的结束！Object.prototype中的所有的成员可以被js中所有的对象共享！ 属性搜索原则">
 <meta property="og:updated_time" content="2017-06-24T12:36:21.087Z">
 <meta name="twitter:card" content="summary">
@@ -136,7 +150,7 @@
 
 
 
-  <title>JS高级(3) | Mio GO GO GO</title>
+  <title>JS高级(3) | 忆往昔峥嵘岁月稠</title>
   
 
 
@@ -172,7 +186,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Mio GO GO GO</span>
+        <span class="site-title">忆往昔峥嵘岁月稠</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -294,7 +308,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mio GO GO GO">
+      <meta itemprop="name" content="忆往昔峥嵘岁月稠">
     </span>
 
     
@@ -631,7 +645,8 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright" >
   
   &copy; 
   <span itemprop="copyrightYear">2017</span>
@@ -642,6 +657,11 @@
 </div>
 
 
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
 <div class="powered-by">
   Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
@@ -688,6 +708,8 @@
   
 
 
+  
+
 
 
 
@@ -715,6 +737,9 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
