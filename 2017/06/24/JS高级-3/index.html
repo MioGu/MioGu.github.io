@@ -107,16 +107,16 @@
 
 
 
-<meta name="description" content="原型链对象都有原型，原型也是对象，原型也有原型，这样就形成了原型组成链条结构，称为原型链。 Object.prototypeObject.prototype是js中所有对象的原型链的最终一环，null标志着原型链的结束！Object.prototype中的所有的成员可以被js中所有的对象共享！ 属性搜索原则">
+<meta name="description" content="原型链对象都有原型，原型也是对象，原型也有原型，这样就形成了原型组成链条结构，称为原型链。 Object.prototypeObject.prototype是js中所有对象的原型链的最终一环，null标志着原型链的结束！Object.prototype中的所有的成员可以被js中所有的对象共享！">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS高级(3)">
 <meta property="og:url" content="https://miogu.github.io/2017/06/24/JS高级-3/index.html">
 <meta property="og:site_name" content="忆往昔峥嵘岁月稠">
-<meta property="og:description" content="原型链对象都有原型，原型也是对象，原型也有原型，这样就形成了原型组成链条结构，称为原型链。 Object.prototypeObject.prototype是js中所有对象的原型链的最终一环，null标志着原型链的结束！Object.prototype中的所有的成员可以被js中所有的对象共享！ 属性搜索原则">
-<meta property="og:updated_time" content="2017-06-24T12:36:21.087Z">
+<meta property="og:description" content="原型链对象都有原型，原型也是对象，原型也有原型，这样就形成了原型组成链条结构，称为原型链。 Object.prototypeObject.prototype是js中所有对象的原型链的最终一环，null标志着原型链的结束！Object.prototype中的所有的成员可以被js中所有的对象共享！">
+<meta property="og:updated_time" content="2017-06-26T12:10:50.977Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS高级(3)">
-<meta name="twitter:description" content="原型链对象都有原型，原型也是对象，原型也有原型，这样就形成了原型组成链条结构，称为原型链。 Object.prototypeObject.prototype是js中所有对象的原型链的最终一环，null标志着原型链的结束！Object.prototype中的所有的成员可以被js中所有的对象共享！ 属性搜索原则">
+<meta name="twitter:description" content="原型链对象都有原型，原型也是对象，原型也有原型，这样就形成了原型组成链条结构，称为原型链。 Object.prototypeObject.prototype是js中所有对象的原型链的最终一环，null标志着原型链的结束！Object.prototype中的所有的成员可以被js中所有的对象共享！">
 
 
 
@@ -387,8 +387,8 @@
       
         <h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><p>对象都有原型，原型也是对象，原型也有原型，这样就形成了原型组成链条结构，称为原型链。</p>
 <h3 id="Object-prototype"><a href="#Object-prototype" class="headerlink" title="Object.prototype"></a>Object.prototype</h3><p>Object.prototype是js中所有对象的原型链的最终一环，null标志着原型链的结束！<br>Object.prototype中的所有的成员可以被js中所有的对象共享！</p>
-<h3 id="属性搜索原则"><a href="#属性搜索原则" class="headerlink" title="属性搜索原则"></a>属性搜索原则</h3><a id="more"></a>
-<p>当使用对象访问一个属性的时候</p>
+<a id="more"></a>
+<h3 id="属性搜索原则"><a href="#属性搜索原则" class="headerlink" title="属性搜索原则"></a>属性搜索原则</h3><p>当使用对象访问一个属性的时候</p>
 <ol>
 <li>现在对象本身进行查找，如果有，就直接使用</li>
 <li>如果没有，就去对象的原型中进行查找，如果有，就直接使用</li>
@@ -430,7 +430,7 @@
 <h2 id="Function-1"><a href="#Function-1" class="headerlink" title="Function"></a>Function</h2><h3 id="不传参"><a href="#不传参" class="headerlink" title="不传参"></a>不传参</h3><p>创建出来的是一个空函数，没有任何的功能<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> func = <span class="keyword">new</span> <span class="built_in">Function</span>();</div></pre></td></tr></table></figure></p>
 <h3 id="传一个参数"><a href="#传一个参数" class="headerlink" title="传一个参数"></a>传一个参数</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> func = <span class="keyword">new</span> <span class="built_in">Function</span>(methodBody);</div><div class="line"><span class="comment">//methodBody是一个字符串，里面是符合js语法规范的js代码！会被作为函数体创建新的函数！</span></div></pre></td></tr></table></figure>
 <h3 id="传多个参数"><a href="#传多个参数" class="headerlink" title="传多个参数"></a>传多个参数</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> func = <span class="keyword">new</span> <span class="built_in">Function</span>(arg1, arg2...argN, methodBody);</div><div class="line"><span class="comment">//arg1...argN 都是形参的名称， 是字符串！</span></div><div class="line"><span class="comment">//methodBody是一个字符串，里面是符合js语法规范的js代码！会被作为函数体创建新的函数！</span></div></pre></td></tr></table></figure>
-<h2 id="eval（了解）"><a href="#eval（了解）" class="headerlink" title="eval（了解）"></a>eval（了解）</h2><p>eval可以将字符串转换成代码并直接执行， Funciton创建出来的是函数，需要调用才能执行！</p>
+<h2 id="eval"><a href="#eval" class="headerlink" title="eval()"></a>eval()</h2><p>eval可以将字符串转换成代码并直接执行， Funciton创建出来的是函数，需要调用才能执行！</p>
 <h3 id="解析JSON格式的字符串"><a href="#解析JSON格式的字符串" class="headerlink" title="解析JSON格式的字符串"></a>解析JSON格式的字符串</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//如果直接将json格式的字符串传递给eval使用，eval会把&#123;&#125;当做代码块处理，报错！</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> jsonStr = <span class="string">'&#123;"name": "吴彦祖", age: 18&#125;'</span>;</div><div class="line"></div><div class="line"><span class="comment">//解决办法：</span></div><div class="line"><span class="comment">//1. 把变量的声明也作为字符串传递给eval</span></div><div class="line"><span class="built_in">eval</span>(<span class="string">"var obj = "</span> + jsonStr);</div><div class="line"><span class="comment">//2. 在json格式的字符串前后拼接()</span></div><div class="line"><span class="keyword">var</span> o = <span class="built_in">eval</span>(<span class="string">"("</span> + jsonStr + <span class="string">")"</span>);</div></pre></td></tr></table></figure>
 <p>Function和eval都有安全性问题！一般情况下不会使用这两个东西！</p>
 <h2 id="函数的原型链"><a href="#函数的原型链" class="headerlink" title="函数的原型链"></a>函数的原型链</h2><p>函数也是一个对象，函数的构造函数是Function，所以可以分析出函数的原型链</p>
@@ -446,7 +446,7 @@
 <li><p>将Function当做对象，绘制其原型链</p>
 </li>
 </ol>
-<h2 id="instanceof-关键字"><a href="#instanceof-关键字" class="headerlink" title="instanceof 关键字"></a>instanceof 关键字</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">对象 <span class="keyword">instanceof</span> 构造函数</div><div class="line"><span class="comment">//判断构造函数.prototype是不是在对象的原型链上</span></div><div class="line"></div><div class="line"><span class="comment">//Object ---&gt; Function.prototype ---&gt; Object.prototype ---&gt; null</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span> <span class="keyword">instanceof</span> <span class="built_in">Function</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span> <span class="keyword">instanceof</span> <span class="built_in">Object</span>);</div><div class="line"></div><div class="line"><span class="comment">//Function ---&gt; Function.prototype ---&gt; Object.prototype ---&gt; null</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Function</span> <span class="keyword">instanceof</span> <span class="built_in">Object</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Function</span> <span class="keyword">instanceof</span> <span class="built_in">Function</span>);</div></pre></td></tr></table></figure>
+<h2 id="instanceof-关键字"><a href="#instanceof-关键字" class="headerlink" title="instanceof 关键字"></a>instanceof 关键字</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">对象A <span class="keyword">instanceof</span> 构造函数B</div><div class="line"><span class="comment">//判断 构造函数B.prototype是不是在 对象A 的原型链上</span></div><div class="line"></div><div class="line"><span class="comment">//Object ---&gt; Function.prototype ---&gt; Object.prototype ---&gt; null</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span> <span class="keyword">instanceof</span> <span class="built_in">Function</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span> <span class="keyword">instanceof</span> <span class="built_in">Object</span>);</div><div class="line"></div><div class="line"><span class="comment">//Function ---&gt; Function.prototype ---&gt; Object.prototype ---&gt; null</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Function</span> <span class="keyword">instanceof</span> <span class="built_in">Object</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Function</span> <span class="keyword">instanceof</span> <span class="built_in">Function</span>);</div></pre></td></tr></table></figure>
 <h2 id="函数的成员"><a href="#函数的成员" class="headerlink" title="函数的成员"></a>函数的成员</h2><ol>
 <li>name : 函数的名称</li>
 <li>length: 函数的形参的个数</li>
@@ -502,6 +502,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/26/JS高级-4/" rel="prev" title="JS高级(4)">
+                JS高级(4) <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -573,7 +577,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -590,6 +594,15 @@
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
           
 
         </nav>
@@ -621,7 +634,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#原型链"><span class="nav-number">1.</span> <span class="nav-text">原型链</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-prototype"><span class="nav-number">1.1.</span> <span class="nav-text">Object.prototype</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性搜索原则"><span class="nav-number">1.2.</span> <span class="nav-text">属性搜索原则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object-prototype的成员"><span class="nav-number">2.</span> <span class="nav-text">Object.prototype的成员</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的创建方式"><span class="nav-number">3.</span> <span class="nav-text">函数的创建方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#函数声明"><span class="nav-number">3.1.</span> <span class="nav-text">函数声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数表达式"><span class="nav-number">3.2.</span> <span class="nav-text">函数表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Function"><span class="nav-number">3.3.</span> <span class="nav-text">Function</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Function-1"><span class="nav-number">4.</span> <span class="nav-text">Function</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#不传参"><span class="nav-number">4.1.</span> <span class="nav-text">不传参</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传一个参数"><span class="nav-number">4.2.</span> <span class="nav-text">传一个参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传多个参数"><span class="nav-number">4.3.</span> <span class="nav-text">传多个参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#eval（了解）"><span class="nav-number">5.</span> <span class="nav-text">eval（了解）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解析JSON格式的字符串"><span class="nav-number">5.1.</span> <span class="nav-text">解析JSON格式的字符串</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的原型链"><span class="nav-number">6.</span> <span class="nav-text">函数的原型链</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完整的原型链"><span class="nav-number">7.</span> <span class="nav-text">完整的原型链</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#绘制步骤"><span class="nav-number">7.1.</span> <span class="nav-text">绘制步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#instanceof-关键字"><span class="nav-number">8.</span> <span class="nav-text">instanceof 关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的成员"><span class="nav-number">9.</span> <span class="nav-text">函数的成员</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态成员和实例成员"><span class="nav-number">10.</span> <span class="nav-text">静态成员和实例成员</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#原型链"><span class="nav-number">1.</span> <span class="nav-text">原型链</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-prototype"><span class="nav-number">1.1.</span> <span class="nav-text">Object.prototype</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性搜索原则"><span class="nav-number">1.2.</span> <span class="nav-text">属性搜索原则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object-prototype的成员"><span class="nav-number">2.</span> <span class="nav-text">Object.prototype的成员</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的创建方式"><span class="nav-number">3.</span> <span class="nav-text">函数的创建方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#函数声明"><span class="nav-number">3.1.</span> <span class="nav-text">函数声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数表达式"><span class="nav-number">3.2.</span> <span class="nav-text">函数表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Function"><span class="nav-number">3.3.</span> <span class="nav-text">Function</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Function-1"><span class="nav-number">4.</span> <span class="nav-text">Function</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#不传参"><span class="nav-number">4.1.</span> <span class="nav-text">不传参</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传一个参数"><span class="nav-number">4.2.</span> <span class="nav-text">传一个参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传多个参数"><span class="nav-number">4.3.</span> <span class="nav-text">传多个参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#eval"><span class="nav-number">5.</span> <span class="nav-text">eval()</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解析JSON格式的字符串"><span class="nav-number">5.1.</span> <span class="nav-text">解析JSON格式的字符串</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的原型链"><span class="nav-number">6.</span> <span class="nav-text">函数的原型链</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完整的原型链"><span class="nav-number">7.</span> <span class="nav-text">完整的原型链</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#绘制步骤"><span class="nav-number">7.1.</span> <span class="nav-text">绘制步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#instanceof-关键字"><span class="nav-number">8.</span> <span class="nav-text">instanceof 关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的成员"><span class="nav-number">9.</span> <span class="nav-text">函数的成员</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态成员和实例成员"><span class="nav-number">10.</span> <span class="nav-text">静态成员和实例成员</span></a></li></ol></div>
             
 
           </div>
